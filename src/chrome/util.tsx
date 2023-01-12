@@ -3,16 +3,16 @@ export const menuItems = [
     {
         name: "About",
         color: "#9aed6f",
-        href: "#"
+        href: "about"
     },
     {
         name: "Projects",
         color: "#6fd4ed",
-        href: "#"
+        href: "projects"
     },
     {
         name: "Uses",
         color: "#c879ed",
-        href: "#"
+        href: "uses"
     },
 ];

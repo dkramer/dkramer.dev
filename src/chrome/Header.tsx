@@ -2,6 +2,8 @@
 import React, {createRef, useCallback, useEffect, useRef, useState} from 'react';
 import gsap from "gsap";
 import { css } from "@emotion/react"
+import {menuItems} from "./util";
+import {Link} from "react-router-dom";
 
 const menu = css`
     display: flex;
@@ -59,29 +61,12 @@ const  indicator = css`
 `
 
 
-const items = [
-    {
-        name: "About",
-        color: "#9aed6f",
-        href: "#"
-    },
-    {
-        name: "Projects",
-        color: "#6fd4ed",
-        href: "#"
-    },
-    {
-        name: "Uses",
-        color: "#c879ed",
-        href: "#"
-    },
-];
 export function Header() {
 
         const $root = useRef<HTMLDivElement>(null)
         const $indicator1 = useRef<HTMLDivElement>(null)
         const $indicator2 = useRef<HTMLDivElement>(null)
-        const $items = useRef(items.map((item) => createRef<HTMLAnchorElement>()))
+        const $items = useRef(menuItems.map((item) => createRef<HTMLAnchorElement>()))
         const [ active, setActive ] = useState(0)
         const [ activeHover, setActiveHover ] = useState(active)
 
@@ -91,13 +76,17 @@ export function Header() {
                 const menuOffset = $root.current.getBoundingClientRect()
                 const activeItem = $items.current[activeHover].current
                 if (activeItem) {
+                    if (0 == active) {
+                        console.log('activeItem.getBoundingClientRect()', activeItem.getBoundingClientRect())
+                        console.log('$root.current.getBoundingClientRect()', $root.current.getBoundingClientRect())
+                    }
                     const { width, height, top, left } = activeItem.getBoundingClientRect()
                     const settings = {
                         x: left - menuOffset.x,
                         y: top - menuOffset.y,
                         width: width,
                         height: height,
-                        backgroundColor: items[activeHover].color,
+                        backgroundColor: menuItems[activeHover].color,
                         ease: 'elastic.out(.7, .7)',
                         duration: .8
                     }
@@ -115,8 +104,8 @@ export function Header() {
         }, [activeHover])
 
         useEffect(() => {
-            animate()
             window.addEventListener('resize', animate)
+            animate()
 
             return (() => {
                 window.removeEventListener('resize', animate)
@@ -124,7 +113,7 @@ export function Header() {
         }, [activeHover, animate])
 
     return (
-        <div
+        <nav
             ref={$root}
             css={menu}
         >
@@ -132,8 +121,8 @@ export function Header() {
                 onMouseLeave={() => {
                     setActiveHover(active)
                 }}>
-                {items.map((item, index) => (
-                    <a
+                {menuItems.map((item, index) => (
+                    <Link
                         key={item.name}
                         ref={$items.current[index]}
                         css={activeHover === index ? activeLink : link}
@@ -144,10 +133,10 @@ export function Header() {
                         onMouseEnter={() => {
                             setActiveHover(index)
                         }}
-                        href={item.href}
+                        to={item.href}
                     >
                         {item.name}
-                    </a>
+                    </Link>
                 ))}
                 <div
                     ref={$indicator1}
@@ -158,7 +147,7 @@ export function Header() {
                     css={indicator}
                 />
             </span>
-        </div>
+        </nav>
     )
 }
 

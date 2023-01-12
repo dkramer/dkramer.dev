@@ -43,10 +43,10 @@ const menuItem = css`
   }
 `
 
-export function About() {
+export function Projects() {
   return (
       <div css={footer}>
-          ABOUT
+          PROJECTS
       </div>
   );
 }

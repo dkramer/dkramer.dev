@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import React from 'react';
 import {css} from "@emotion/react";
-import {menuItems} from "./util";
+import {Link} from "react-router-dom";
 
 const footer = css`
   padding: 20px;
@@ -44,24 +44,31 @@ const menuItem = css`
   }
 `
 
-export function Footer() {
+export function About() {
   return (
-      <div css={footer}>
-          <div css={menu}>
-              {menuItems.map((item, index) => (
-                  <a
-                      css={css`${menuItem}; :hover { color: ${item.color}`}
-                      key={item.name}
-                      onClick={() => {
-                          //todo change page
-                      }}
-                      href={item.href}
-                  >
-                      {item.name}
-                  </a>
-              ))}
+      <div css={css`
+      display: flex;
+      
+`}>
+          <div>
+          <h1>Hi, I’m Dakota 👋</h1>
+          <div>I’m a full stack senior software engineer working at Widen (an Acquia company). My passion is in creating. I explore that passion through different avenues including painting, woodworking, baking, and of course creating software.
+
+              Outside of work, I enjoy things.
+
+              While I am a software engineer and a total nerd, I’m a huge extrovert and love spending time with people. If you ever want to debate the usefulness of college education for professions like computer science, I will gladly oblige as I am a self-taught developer who found very little practical value in college behind getting that slip of paper they call a diploma.</div>
           </div>
-        <div css={css`color: #DFDFDF`}>© {new Date().getFullYear()} Dakota Kramer. All rights reserved.</div>
+          <div>
+              <image />
+              <div>
+                  <ul>
+                      <li><Link to='https://github.com/dkramer'>Follow on Github</Link></li>
+                      <li><Link to='https://www.linkedin.com/in/dakota-kramer-32070046/'>Follow on linkedIn</Link></li>
+                      <li><Link to='mailto=info@dkramer.dev'>info@dkramer.dev</Link></li>
+                      <li></li>
+                  </ul>
+              </div>
+          </div>
       </div>
   );
 }

@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="999ef031-c55e-42aa-b9e7-27d096f923eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/chrome/util.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/About.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/Projects.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/Uses.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chrome/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/chrome/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chrome/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/chrome/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chrome/util.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/chrome/util.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/repos/dkramer.dev/src/chrome",
+    "last_opened_file_path": "C:/repos/dkramer.dev/src/routes",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -46,6 +50,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\repos\dkramer.dev\src\routes" />
       <recent name="C:\repos\dkramer.dev\src\chrome" />
     </key>
   </component>
@@ -57,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673543932883</updated>
-      <workItem from="1673543935162" duration="11724000" />
+      <workItem from="1673543935162" duration="15637000" />
     </task>
     <servers />
   </component>
