@@ -6,6 +6,11 @@ export const menuItems = [
         href: "about"
     },
     {
+        name: "Resume",
+        color: "#c879ed",
+        href: "resume"
+    },
+    {
         name: "Projects",
         color: "#6fd4ed",
         href: "projects"

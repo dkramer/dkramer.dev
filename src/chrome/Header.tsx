@@ -67,7 +67,7 @@ export function Header() {
         const $indicator1 = useRef<HTMLDivElement>(null)
         const $indicator2 = useRef<HTMLDivElement>(null)
         const $items = useRef(menuItems.map((item) => createRef<HTMLAnchorElement>()))
-        const [ active, setActive ] = useState(0)
+        const [ active, setActive ] = useState(0) //todo get it from url
         const [ activeHover, setActiveHover ] = useState(active)
 
         const animate = useCallback(() => {
@@ -76,7 +76,7 @@ export function Header() {
                 const menuOffset = $root.current.getBoundingClientRect()
                 const activeItem = $items.current[activeHover].current
                 if (activeItem) {
-                    if (0 == active) {
+                    if (0 == active && console) {
                         console.log('activeItem.getBoundingClientRect()', activeItem.getBoundingClientRect())
                         console.log('$root.current.getBoundingClientRect()', $root.current.getBoundingClientRect())
                     }

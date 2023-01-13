@@ -8,6 +8,7 @@ import {Route, Routes} from "react-router-dom";
 import {About} from "./routes/About";
 import {Projects} from "./routes/Projects";
 import {Uses} from "./routes/Uses";
+import {Resume} from "./routes/Resume";
 
 const background = css`    
   display: flex;
@@ -33,6 +34,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={ <About/> } />
                     <Route path="about" element={ <About/> } />
+                    <Route path="resume" element={ <Resume/> } />
                     <Route path="projects" element={ <Projects/> } />
                     <Route path="uses" element={ <Uses/> } />
                 </Routes>

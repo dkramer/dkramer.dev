@@ -44,7 +44,7 @@ const menuItem = css`
   }
 `
 
-export function About() {
+export function Resume() {
   return (
       <div css={css`
       display: flex;
