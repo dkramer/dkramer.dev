@@ -1,74 +1,265 @@
 /** @jsxImportSource @emotion/react */
-import React from 'react';
-import {css} from "@emotion/react";
-import {Link} from "react-router-dom";
+import React from 'react'
+import { css } from '@emotion/react'
+import { Link } from 'react-router-dom'
+import EmailIcon from '@mui/icons-material/Email'
+import FileDownloadIcon from '@mui/icons-material/FileDownload'
+import { borderBottom, contactLinks, screenSize } from '../chrome/util'
 
-const footer = css`
-  padding: 20px;
-  max-width: 800px;
-  margin: 20px auto;
-  border-top: 1px solid #eee;
+const main = css`
+  display: flex;
+  flex-direction: column;
+`
+
+const head = css`
   display: flex;
   justify-content: space-between;
-  font-size: 15px;
-
-  @media (max-width: 650px) {
+  width: 100%;
+  padding-bottom: 20px;
+  ${borderBottom};
+  @media (max-width: ${screenSize.XS}) {
     flex-direction: column;
-    align-items: center;
-    font-size: 12px;
 `
 
-const menu = css`
-    display: flex;
-    justify-content: space-between; 
-   
-
-    @media (max-width: 400px) {
-      color: red;
-      flex-direction: column;
-      align-items: center;
-      margin: 4px 0px;
-    }
-      
-`
-
-const menuItem = css`
-    margin: 0 8px;
-    color: #404040;
-    transition:color .2s ease-in;
-    font-weight: bold;
-    text-decoration: none;
-
-  @media (max-width: 400px) {
-    margin: 4px 0px;
+const contact = css`
+  ${contactLinks};
+  svg {
+    font-size: 1.25em;
+    margin-right: 4px;
   }
 `
 
+const section = css`
+  display: flex;
+  ${borderBottom};
+
+  @media (max-width: ${screenSize.S}) {
+    flex-direction: column;
+  }
+
+  h2 {
+    font-style: italic;
+  }
+
+  li {
+    text-align: left;
+  }
+`
+
+const skills = css`
+  ${section};
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      text-align: left;
+      width: 10.5em;
+    }
+  }
+`
+
+const jobTitle = css`
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  padding-top: 20px;
+`
+const jobRole = css`
+  display: flex;
+  justify-content: space-between;
+  font-style: italic;
+`
+
+const educationDetail = css`
+  width: 100%;
+  margin-left: 20px;
+`
 export function Resume() {
   return (
-      <div css={css`
-      display: flex;
-      
-`}>
+    <div css={main}>
+      <div css={head}>
+        <div css={{ textAlign: 'left' }}>
+          <h1 css={{ margin: 0 }}>Dakota Kramer</h1>
+          <div>Senior Software Engineer</div>
+        </div>
+        <div css={{ textAlign: 'left' }}>
           <div>
-          <h1>Hi, I’m Dakota 👋</h1>
-          <div>I’m a full stack senior software engineer working at Widen (an Acquia company). My passion is in creating. I explore that passion through different avenues including painting, woodworking, baking, and of course creating software.
-
-              Outside of work, I enjoy things.
-
-              While I am a software engineer and a total nerd, I’m a huge extrovert and love spending time with people. If you ever want to debate the usefulness of college education for professions like computer science, I will gladly oblige as I am a self-taught developer who found very little practical value in college behind getting that slip of paper they call a diploma.</div>
+            <a css={contact} href='mailto=Info@dkramer.dev'>
+              <EmailIcon /> Info@dkramer.dev
+            </a>
           </div>
           <div>
-              <image />
-              <div>
-                  <ul>
-                      <li><Link to='https://github.com/dkramer'>Follow on Github</Link></li>
-                      <li><Link to='https://www.linkedin.com/in/dakota-kramer-32070046/'>Follow on linkedIn</Link></li>
-                      <li><Link to='mailto=info@dkramer.dev'>info@dkramer.dev</Link></li>
-                      <li></li>
-                  </ul>
-              </div>
+            <Link css={contact} to='/Dakota_Kramer_2023_resume.pdf' target='_blank' download>
+              <FileDownloadIcon /> Download Resume
+            </Link>
           </div>
+        </div>
       </div>
-  );
+
+      <div css={skills}>
+        <div>
+          <h2>Skills</h2>
+        </div>
+        <div>
+          <ul>
+            <li>Full Stack</li>
+            <li>Spring</li>
+            <li>Maven</li>
+            <li>Gradle</li>
+            <li>NoSql</li>
+            <li>Elasticsearch</li>
+            <li>DynamoDB</li>
+            <li>SQL</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>jQuery</li>
+            <li>React</li>
+            <li>HTML5</li>
+            <li>Emotion js</li>
+            <li>CSS/LESS</li>
+            <li>Agile</li>
+            <li>AWS</li>
+            <li>Restful API</li>
+            <li>SOAP Web Services</li>
+            <li>Security Development Lifecycle</li>
+          </ul>
+        </div>
+      </div>
+
+      <div css={section}>
+        <div>
+          <h2>Experience</h2>
+        </div>
+        <div>
+          <ul>
+            <li>Developing fast, reliable, and performant web applications</li>
+            <li>
+              Facilitating clarity in stakeholder requirements by leading the team around best practices throughout the entire software
+              development lifecycle
+            </li>
+            <li>Increasing speed to market with zero downtime releases, kubernetes, docker, and code toggles</li>
+            <li>Increasing customer confidence with automated tests and reliable monitoring</li>
+            <li>
+              Optimize data retrieval for the unique and varied needs of stakeholders and customers by utilizing a diversified set of
+              databases such as SQL, DynamoDB, and Elasticsearch
+            </li>
+            <li>
+              Letting customers take control of their data by implementing a public facing restful API abstracting out multiple complex
+              microservices
+            </li>
+            <li>Increasing customer base by implementing accessible web UIs meeting section 508 compliance</li>
+          </ul>
+        </div>
+      </div>
+
+      <div css={section}>
+        <div>
+          <div css={jobTitle}>
+            <div>Widen / Acquia</div>
+            <div>Remote / Madison, Wisconsin</div>
+          </div>
+          <div css={jobRole}>
+            <div>Senior Software Engineer</div>
+            <div>January 2019 to Present</div>
+          </div>
+          <div>
+            <ul>
+              <li>Lead the use of code toggles for schedulable, revertible feature releases</li>
+              <li>
+                Lead the elevation of coding standards through code toggles and automated testing, which accelerated the speed and
+                reliability of deploys and changes by 300%
+              </li>
+              <li>
+                Develop new microservices unlocking a total addressable market of $9 billion in the Product Information Management industry
+              </li>
+              <li>Enhanced developer experience by leveraging TypeScript and Emotion Js to pursue type safe, quality code</li>
+              <li>Provide users with quick search results with DynamoDb, mySql, and Elasticsearch</li>
+              <li>
+                Increase customer trust in data integrity by maintaining, enhancing, and working in an Event Sourced system utilizing
+                Command and Query Responsibility Segregation (CQRS)
+              </li>
+              <li>Abstract away multiple complex microservices for ease of customer use of Public API</li>
+              <li>Ensure system performance by utilizing Pub/Sub pattern and queues for Java batch applications</li>
+              <li>Create searchable and digestible documentation for stakeholders and developers in Confluence and Jira</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div css={section}>
+        <div>
+          <div css={jobTitle}>
+            <div>Great Lakes Higher Education / Nelnet</div>
+            <div>Madison, Wisconsin</div>
+          </div>
+          <div css={jobRole}>
+            <div>Senior Software Engineer</div>
+            <div>April 2015 to January 2019</div>
+          </div>
+          <div>
+            <ul>
+              <li>Maintained and enhanced a call center Java Spring web application</li>
+              <li>Provided users with quick search results with DB2 Native Stored Procedures and myBatis</li>
+              <li>Created searchable and digestible documentation for stakeholders and developers in Confluence and Jira</li>
+              <li>
+                Reviewed code security audits, prioritized issues with stakeholders, and remediated security issues and concerns as team
+                Security Advisor
+              </li>
+              <li>
+                Audited, prioritized issues with stakeholders, and remedied accessibility issues to maintain section 508 accessibility
+                requirements to maintain contractual obligations as team Web Accessibility Advisor
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div css={section}>
+        <div>
+          <div css={jobTitle}>
+            <div>Hewlett Packard</div>
+            <div>Madison, Wisconsin</div>
+          </div>
+          <div css={jobRole}>
+            <div>Developer II</div>
+            <div>February 2012 to March 2015</div>
+          </div>
+          <div>
+            <ul>
+              <li>Maintained and enhanced a vaccine registry system</li>
+              <li>
+                Optimized data retrieval for the unique and varied needs of stakeholders and customers by designing and implementing
+                normalized transactional SQL database and SQL data mart
+              </li>
+              <li>Designed and implemented a customizable and predictive vaccine ordering system optimizing customer's workflow</li>
+              <li>
+                Allowed real-time vaccine registry updates through implementing SOAP web service minimizing reporting delay and
+                deduplication issues
+              </li>
+              <li>Let customers query vaccination statistics by implementing pdf reports with JasperReports and iReports</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div css={section}>
+        <div>
+          <h2>Education</h2>
+        </div>
+        <div css={educationDetail}>
+          <div css={jobTitle}>
+            <div>Madison Area Technical College</div>
+            <div>Madison, Wisconsin</div>
+          </div>
+          <ul>
+            <li>Associate of Applied Science Degree, Web Analyst/Programmer</li>
+            <li>Honors—Dean’s List – High Honors: Fall 2009 to Spring 2012</li>
+            <li>Graduation Date: May 2012</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  )
 }

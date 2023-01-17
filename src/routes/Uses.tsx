@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
-import React from 'react';
-import {css} from "@emotion/react";
+import React from 'react'
+import { css } from '@emotion/react'
 
 const footer = css`
   padding: 20px;
@@ -18,25 +18,23 @@ const footer = css`
 `
 
 const menu = css`
-    display: flex;
-    justify-content: space-between; 
-   
+  display: flex;
+  justify-content: space-between;
 
-    @media (max-width: 400px) {
-      color: red;
-      flex-direction: column;
-      align-items: center;
-      margin: 4px 0px;
-    }
-      
+  @media (max-width: 400px) {
+    color: red;
+    flex-direction: column;
+    align-items: center;
+    margin: 4px 0px;
+  }
 `
 
 const menuItem = css`
-    margin: 0 8px;
-    color: #404040;
-    transition:color .2s ease-in;
-    font-weight: bold;
-    text-decoration: none;
+  margin: 0 8px;
+  color: #404040;
+  transition: color 0.2s ease-in;
+  font-weight: bold;
+  text-decoration: none;
 
   @media (max-width: 400px) {
     margin: 4px 0px;
@@ -44,9 +42,5 @@ const menuItem = css`
 `
 
 export function Uses() {
-  return (
-      <div css={footer}>
-          USES
-      </div>
-  );
+  return <div css={footer}>USES</div>
 }

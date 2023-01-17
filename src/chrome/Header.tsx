@@ -1,9 +1,9 @@
 /** @jsxImportSource @emotion/react */
-import React, {createRef, useCallback, useEffect, useRef, useState} from 'react';
-import gsap from "gsap";
-import { css } from "@emotion/react"
-import {menuItems} from "./util";
-import {Link} from "react-router-dom";
+import React, { createRef, useCallback, useEffect, useRef, useState } from 'react'
+import gsap from 'gsap'
+import { css } from '@emotion/react'
+import { menuItems, screenSize } from './util'
+import { Link, useLocation } from 'react-router-dom'
 
 const menu = css`
     display: flex;
@@ -15,7 +15,7 @@ const menu = css`
     margin: 20px auto;
     border-bottom: 1px solid #eee;
 
-    @media (max-width: 650px) {
+    @media (max-width: ${screenSize.XS}) {
       flex-direction: column;
       align-items: center;
 `
@@ -27,7 +27,7 @@ const onLeaveBox = css`
   max-width: 800px;
   margin: 0px auto;
 
-  @media (max-width: 650px) {
+  @media (max-width: ${screenSize.XS}) {
     flex-direction: column;
     align-items: center;
 `
@@ -43,119 +43,104 @@ const link = css`
     font-size: 16px;
     margin: 4px 8px;
 
-  @media (max-width: 650px) {
+  @media (max-width: ${screenSize.XS}) {
     font-size: 12px;
 `
 
 const activeLink = css`
-      ${link};
-      color: #fff;
+  ${link};
+  color: #fff;
 `
 
-const  indicator = css`
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 60px;
+const indicator = css`
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 60px;
 `
-
 
 export function Header() {
+  const $root = useRef<HTMLDivElement>(null)
+  const $indicator1 = useRef<HTMLDivElement>(null)
+  const $indicator2 = useRef<HTMLDivElement>(null)
+  const $items = useRef(menuItems.map((item) => createRef<HTMLAnchorElement>()))
+  const location = useLocation()
+  console.log('location', location)
+  const [active, setActive] = useState(() => {
+    const itemIndex = menuItems.findIndex((item) => '/' + item.href === location.pathname)
+    return itemIndex === -1 ? 0 : itemIndex
+  })
+  const [activeHover, setActiveHover] = useState(active)
 
-        const $root = useRef<HTMLDivElement>(null)
-        const $indicator1 = useRef<HTMLDivElement>(null)
-        const $indicator2 = useRef<HTMLDivElement>(null)
-        const $items = useRef(menuItems.map((item) => createRef<HTMLAnchorElement>()))
-        const [ active, setActive ] = useState(0) //todo get it from url
-        const [ activeHover, setActiveHover ] = useState(active)
+  const animate = useCallback(() => {
+    if ($root.current) {
+      const menuOffset = $root.current.getBoundingClientRect()
+      const activeItem = $items.current[activeHover].current
+      if (activeItem) {
+        if (0 == active && console) {
+          console.log('activeItem.getBoundingClientRect()', activeItem.getBoundingClientRect())
+          console.log('$root.current.getBoundingClientRect()', $root.current.getBoundingClientRect())
+        }
+        const { width, height, top, left } = activeItem.getBoundingClientRect()
+        const settings = {
+          x: left - menuOffset.x,
+          y: top - menuOffset.y,
+          width: width,
+          height: height,
+          backgroundColor: menuItems[activeHover].color,
+          ease: 'elastic.out(.7, .7)',
+          duration: 0.8
+        }
 
-        const animate = useCallback(() => {
-            if ($root.current) {
+        gsap.to($indicator1.current!, {
+          ...settings
+        })
 
-                const menuOffset = $root.current.getBoundingClientRect()
-                const activeItem = $items.current[activeHover].current
-                if (activeItem) {
-                    if (0 == active && console) {
-                        console.log('activeItem.getBoundingClientRect()', activeItem.getBoundingClientRect())
-                        console.log('$root.current.getBoundingClientRect()', $root.current.getBoundingClientRect())
-                    }
-                    const { width, height, top, left } = activeItem.getBoundingClientRect()
-                    const settings = {
-                        x: left - menuOffset.x,
-                        y: top - menuOffset.y,
-                        width: width,
-                        height: height,
-                        backgroundColor: menuItems[activeHover].color,
-                        ease: 'elastic.out(.7, .7)',
-                        duration: .8
-                    }
+        gsap.to($indicator2.current!, {
+          ...settings,
+          duration: 1
+        })
+      }
+    }
+  }, [activeHover])
 
-                    gsap.to($indicator1.current!, {
-                        ...settings,
-                    })
+  useEffect(() => {
+    window.addEventListener('resize', animate)
+    animate()
 
-                    gsap.to($indicator2.current!, {
-                        ...settings,
-                        duration: 1
-                    })
-                }
-            }
-        }, [activeHover])
+    return () => {
+      window.removeEventListener('resize', animate)
+    }
+  }, [activeHover, animate])
 
-        useEffect(() => {
-            window.addEventListener('resize', animate)
-            animate()
-
-            return (() => {
-                window.removeEventListener('resize', animate)
-            })
-        }, [activeHover, animate])
-
-    return (
-        <nav
-            ref={$root}
-            css={menu}
-        >
-            <span css={onLeaveBox}
-                onMouseLeave={() => {
-                    setActiveHover(active)
-                }}>
-                {menuItems.map((item, index) => (
-                    <Link
-                        key={item.name}
-                        ref={$items.current[index]}
-                        css={activeHover === index ? activeLink : link}
-                        onClick={() => {
-                            //change page
-                            setActive(index)
-                        }}
-                        onMouseEnter={() => {
-                            setActiveHover(index)
-                        }}
-                        to={item.href}
-                    >
-                        {item.name}
-                    </Link>
-                ))}
-                <div
-                    ref={$indicator1}
-                    css={indicator}
-                />
-                <div
-                    ref={$indicator2}
-                    css={indicator}
-                />
-            </span>
-        </nav>
-    )
+  return (
+    <nav ref={$root} css={menu}>
+      <span
+        css={onLeaveBox}
+        onMouseLeave={() => {
+          setActiveHover(active)
+        }}
+      >
+        {menuItems.map((item, index) => (
+          <Link
+            key={item.name}
+            ref={$items.current[index]}
+            css={activeHover === index ? activeLink : link}
+            onClick={() => {
+              setActive(index)
+            }}
+            onMouseEnter={() => {
+              setActiveHover(index)
+            }}
+            to={item.href}
+          >
+            {item.name}
+          </Link>
+        ))}
+        <div ref={$indicator1} css={indicator} />
+        <div ref={$indicator2} css={indicator} />
+      </span>
+    </nav>
+  )
 }
-
-
-
-
-
-
-
-
-
