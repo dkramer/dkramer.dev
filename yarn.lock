@@ -4515,6 +4515,18 @@ electron-to-chromium@^1.4.251:
   resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.284.tgz"
   integrity sha512-M8WEXFuKXMYMVr45fo8mq0wUrrJHheiKZf6BArTKk9ZBYCKJEOU5H8cdWgDT+qCVZf7Na4lVUaZsA+h6uA9+PA==
 
+embla-carousel-react@^7.0.6:
+  version "7.0.6"
+  resolved "https://registry.yarnpkg.com/embla-carousel-react/-/embla-carousel-react-7.0.6.tgz#8119d9ae2800ed8c7d436ea84cdc9bef21844f98"
+  integrity sha512-tl7dB8X9bCd7j8iiU8Nm/JZjiWRsNLofH7dmc0TjVMvMZ+eEy5NvZVq08Nv10lBuqGW87X+i98HoKojkga91Vw==
+  dependencies:
+    embla-carousel "7.0.6"
+
+embla-carousel@7.0.6:
+  version "7.0.6"
+  resolved "https://registry.yarnpkg.com/embla-carousel/-/embla-carousel-7.0.6.tgz#5dcc35d42c283255f6d8f0e99db37359e34c4b2b"
+  integrity sha512-0YrByGAaXxl968KSljUl+28rV0PrpR25aU/Af1Sw/1F3nMco391ZkMV9U2SZu9glEqicM8knuqnOrvLJaNxTWw==
+
 emittery@^0.10.2:
   version "0.10.2"
   resolved "https://registry.npmjs.org/emittery/-/emittery-0.10.2.tgz"

@@ -66,7 +66,6 @@ export function Header() {
   const $indicator2 = useRef<HTMLDivElement>(null)
   const $items = useRef(menuItems.map((item) => createRef<HTMLAnchorElement>()))
   const location = useLocation()
-  console.log('location', location)
   const [active, setActive] = useState(() => {
     const itemIndex = menuItems.findIndex((item) => '/' + item.href === location.pathname)
     return itemIndex === -1 ? 0 : itemIndex
@@ -78,10 +77,6 @@ export function Header() {
       const menuOffset = $root.current.getBoundingClientRect()
       const activeItem = $items.current[activeHover].current
       if (activeItem) {
-        if (0 == active && console) {
-          console.log('activeItem.getBoundingClientRect()', activeItem.getBoundingClientRect())
-          console.log('$root.current.getBoundingClientRect()', $root.current.getBoundingClientRect())
-        }
         const { width, height, top, left } = activeItem.getBoundingClientRect()
         const settings = {
           x: left - menuOffset.x,
