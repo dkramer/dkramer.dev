@@ -51,7 +51,7 @@ export function About() {
             passion through different avenues including painting, woodworking, baking, and of course creating software.
           </p>
           <p>
-            Outside of creating, I enjoy time indoors as well as out. I'm semi-pro binge watcher. (Want to talk about that terrible GOT
+            Outside of creating, I enjoy time indoors as well as out. I'm a semi-pro binge watcher. (Want to talk about that terrible GOT
             ending?) Or I can be found just as easily out on a hiking trail with my dogs. Did I mention I'm a big dog lover?
           </p>
           <p>Want to connect? Please feel free to reach out with the following links!</p>
