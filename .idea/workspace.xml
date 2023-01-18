@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="999ef031-c55e-42aa-b9e7-27d096f923eb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Resume.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Resume.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +35,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2022.3.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "ts.external.directory.path": "C:\\repos\\dkramer.dev\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -59,7 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1673543932883</updated>
       <workItem from="1673543935162" duration="17762000" />
-      <workItem from="1673975973158" duration="15277000" />
+      <workItem from="1673975973158" duration="16231000" />
     </task>
     <servers />
   </component>
