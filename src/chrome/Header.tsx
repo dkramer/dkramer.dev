@@ -33,18 +33,19 @@ const onLeaveBox = css`
 `
 
 const link = css`
-    padding: 18px 28px;
-    cursor: pointer;
-    transition: color .3s ease-out;
-    text-decoration: none;
-    color: #111;
-    letter-spacing: 0.05em;
-    font-weight: bold;
-    font-size: 16px;
-    margin: 4px 8px;
+  padding: 18px 28px;
+  cursor: pointer;
+  transition: color 0.3s ease-out;
+  text-decoration: none;
+  color: #111;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 4px 8px;
 
   @media (max-width: ${screenSize.XS}) {
     font-size: 12px;
+  }
 `
 
 const activeLink = css`
@@ -67,7 +68,7 @@ export function Header() {
   const $items = useRef(menuItems.map((item) => createRef<HTMLAnchorElement>()))
   const location = useLocation()
   const [active, setActive] = useState(() => {
-    const itemIndex = menuItems.findIndex((item) => '/' + item.href === location.pathname)
+    const itemIndex = menuItems.findIndex((item) => item.href === location.pathname.split('/')[1])
     return itemIndex === -1 ? 0 : itemIndex
   })
   const [activeHover, setActiveHover] = useState(active)

@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import React from 'react'
 import { css } from '@emotion/react'
-import { menuItems } from './util'
+import { menuItems, screenSize } from './util'
 import { Link } from 'react-router-dom'
 
 const footer = css`
@@ -13,10 +13,11 @@ const footer = css`
   justify-content: space-between;
   font-size: 15px;
 
-  @media (max-width: 650px) {
+  @media (max-width: ${screenSize.XS}) {
     flex-direction: column;
     align-items: center;
     font-size: 12px;
+  }
 `
 
 const menu = css`

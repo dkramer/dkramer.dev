@@ -1,16 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import React, { useState, useEffect, useCallback } from 'react'
 import useEmblaCarousel, { EmblaOptionsType } from 'embla-carousel-react'
-import imageByIndex from './useImages'
 import { PrevButton } from './PrevButton'
 import { NextButton } from './NextButton'
 import { DotButton } from './DotButton'
 import { css } from '@emotion/react'
-
-type PropType = {
-  slides: string[]
-  options?: EmblaOptionsType
-}
+import { screenSize } from '../../chrome/util'
 
 const container = css`
   overflow: hidden;
@@ -51,7 +46,6 @@ export const emblaButton = css`
   width: 4rem;
   height: 4rem;
   -webkit-appearance: none;
-  background-color: transparent;
   touch-action: manipulation;
   display: inline-flex;
   text-decoration: none;
@@ -59,9 +53,17 @@ export const emblaButton = css`
   border: 0;
   padding: 0;
   margin: 0;
+  background-color: lightgray;
+  opacity: 0.5;
+  border-radius: 12px;
 
   :disabled {
     opacity: 0.3;
+  }
+
+  @media (max-width: ${screenSize.XS}) {
+    width: 3rem;
+    height: 3rem;
   }
 `
 
@@ -80,6 +82,11 @@ const dots = css`
   justify-content: center;
   align-items: center;
 `
+
+type PropType = {
+  slides: string[]
+  options?: EmblaOptionsType
+}
 export function EmblaCarousel(props: PropType) {
   const { slides, options } = props
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
@@ -107,6 +114,15 @@ export function EmblaCarousel(props: PropType) {
     emblaApi.on('reInit', onSelect)
   }, [emblaApi, setScrollSnaps, onSelect])
 
+  useEffect(() => {
+    if (!emblaApi) return
+    emblaApi.reInit()
+    setScrollSnaps(emblaApi.scrollSnapList())
+    scrollTo(0)
+    setPrevBtnEnabled(emblaApi.canScrollPrev())
+    setNextBtnEnabled(emblaApi.canScrollNext())
+  }, [emblaApi, props.slides])
+
   return (
     <div css={emblaStyle}>
       <div css={container}>
@@ -114,7 +130,7 @@ export function EmblaCarousel(props: PropType) {
           <div css={slideContainer}>
             {slides.map((slide, index) => (
               <div key={index} className='embla__slide' css={slideStyle}>
-                <img src={slide} />
+                <img css={slideStyle} src={slide} />
               </div>
             ))}
           </div>
