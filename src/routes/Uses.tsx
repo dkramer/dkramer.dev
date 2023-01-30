@@ -72,7 +72,7 @@ export function Uses() {
             <li>
               <h3>HyperX Pulsefire Haste</h3>
               <div>
-                This is a very light mouse which makes it ergonomic. Its also wired which I prefer as batteries tend
+                This is a very light mouse which makes it ergonomic. It's also wired which I prefer as batteries tend
                 to die at the worst possible moment.
               </div>
             </li>
@@ -118,7 +118,7 @@ export function Uses() {
             </li>
             <li>
               <h3>Canon RF 100-500 IS Lens</h3>
-              <div>My go to lens for wildlife photography.</div>
+              <div>My go-to lens for wildlife photography.</div>
             </li>
             <li>
               <h3>Canon RF 50mm F1.8 STM Lens</h3>
