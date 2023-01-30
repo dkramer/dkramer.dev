@@ -67,7 +67,7 @@ export function Uses() {
             </li>
             <li>
               <h3>Standing Desk</h3>
-              <div>A current project of mine is building a river "table" sit standing desk. They sitting is the new smoking.</div>
+              <div>A current project of mine is building a river "table" sit standing desk. They say sitting is the new smoking.</div>
             </li>
             <li>
               <h3>HyperX Pulsefire Haste</h3>
