@@ -244,7 +244,11 @@ export function Resume() {
         </div>
       </div>
 
-      <div css={css`${section}`}>
+      <div
+        css={css`
+          ${section}
+        `}
+      >
         <div>
           <h2>Education</h2>
         </div>

@@ -10,6 +10,7 @@ import { Projects } from './routes/Projects'
 import { Uses } from './routes/Uses'
 import { Resume } from './routes/Resume'
 import { screenSize } from './chrome/util'
+import { RemoveTrailingSlash } from './components/RemoveTrailingSlash'
 
 const background = css`
   display: flex;
@@ -47,11 +48,13 @@ function App() {
       <div css={content}>
         <Header />
         <div css={contentBody}>
+          <RemoveTrailingSlash />
           <Routes>
             <Route path='/' element={<About />} />
             <Route path='about' element={<About />} />
             <Route path='resume' element={<Resume />} />
-            <Route path='projects' element={<Projects />} />
+            <Route path='projects/:paintingType' element={<Projects />} />
+            <Route path='projects/*' element={<Projects />} />
             <Route path='uses' element={<Uses />} />
           </Routes>
         </div>
