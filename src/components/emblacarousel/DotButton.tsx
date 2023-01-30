@@ -30,6 +30,7 @@ const buttonStyle = css`
     width: 100%;
     height: 0.3rem;
     content: '';
+    border: 1px solid #545454;
   }
 
   .embla__dot--selected:after {
@@ -45,7 +46,7 @@ export function DotButton(props: DotButtonPropType) {
     } else {
       return css`
         :after {
-          background: linear-gradient(130deg, white, black);
+          background: linear-gradient(120deg, white, #545454);
         }
       `
     }

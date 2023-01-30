@@ -5,41 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="999ef031-c55e-42aa-b9e7-27d096f923eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/projects/macro/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/macro/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/macro/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/macro/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/macro/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/macro/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/macro/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/paintings/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/paintings/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/paintings/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/paintings/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/paintings/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/paintings/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/wildlife/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/wildlife/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/wildlife/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/wildlife/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/wildlife/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/wildlife/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/wildlife/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/wildlife/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/wildlife/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/projects/wildlife/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RemoveTrailingSlash.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/projectPictureUtil.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Dakota_Kramer_2023_resume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/Dakota_Kramer_2023_resume.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/meSmall.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/meSmall.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chrome/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/chrome/Footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chrome/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/chrome/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chrome/util.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/chrome/util.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chrome/util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/chrome/util.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RemoveTrailingSlash.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RemoveTrailingSlash.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/emblacarousel/DotButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/emblacarousel/DotButton.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/emblacarousel/EmblaCarousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/emblacarousel/EmblaCarousel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/emblacarousel/useImages.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/emblacarousel/NextButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/emblacarousel/NextButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/emblacarousel/PrevButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/emblacarousel/PrevButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/About.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/Projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Projects.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Resume.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Resume.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Uses.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Uses.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/projectPictureUtil.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projectPictureUtil.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,21 +39,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/repos/dkramer.dev/src/routes",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "C:\\repos\\dkramer.dev\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/repos/dkramer.dev/src/routes&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\repos\\dkramer.dev\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\repos\dkramer.dev\src\routes" />
@@ -81,9 +63,9 @@
       <recent name="C:\repos\dkramer.dev\src\chrome" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\repos\dkramer.dev\public" />
       <recent name="C:\repos\dkramer.dev\public\projects\wildlife" />
       <recent name="C:\repos\dkramer.dev\src\components\emblacarousel" />
-      <recent name="C:\repos\dkramer.dev\public" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -97,7 +79,7 @@
       <workItem from="1673543935162" duration="17762000" />
       <workItem from="1673975973158" duration="24540000" />
       <workItem from="1674143293193" duration="7754000" />
-      <workItem from="1675023756534" duration="8741000" />
+      <workItem from="1675023756534" duration="15722000" />
     </task>
     <servers />
   </component>

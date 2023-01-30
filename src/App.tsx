@@ -13,6 +13,7 @@ import { screenSize } from './chrome/util'
 import { RemoveTrailingSlash } from './components/RemoveTrailingSlash'
 
 const background = css`
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   background-color: #f9f9f9;

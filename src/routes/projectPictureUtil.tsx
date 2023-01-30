@@ -5,7 +5,6 @@ export enum PictureTypes {
 }
 
 export const pictureLinks = [
-
   {
     name: 'Random',
     href: 'random',

@@ -23,9 +23,7 @@ const slideStyle = css`
 
 const emblaStyle = css`
   position: relative;
-  background-color: #4a4a4a;
   padding: 12px 20px;
-  border-radius: 12px;
 
   .embla__slide {
     flex: 0 0 100%;
