@@ -72,8 +72,8 @@ export function About() {
               </a>
             </li>
             <li>
-              <a css={contactLinks} href='mailto=Info@dkramer.dev'>
-                <EmailIcon /> Info@dkramer.dev
+              <a css={contactLinks} href='mailto=dakota@dkramer.dev'>
+                <EmailIcon /> dakota@dkramer.dev
               </a>
             </li>
             <li>

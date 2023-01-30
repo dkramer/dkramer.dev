@@ -5,8 +5,8 @@ import { EmblaOptionsType } from 'embla-carousel-react'
 import { picture, pictureLinks, pictures, PictureTypes } from './projectPictureUtil'
 import { Link, useNavigate } from 'react-router-dom'
 import { css } from '@emotion/react'
-import {contactLinks, menuItems} from '../chrome/util'
-import GitHubIcon from "@mui/icons-material/GitHub";
+import { contactLinks } from '../chrome/util'
+import GitHubIcon from '@mui/icons-material/GitHub'
 
 const pictureSelectLink = css`
   margin: 0 8px;
@@ -57,7 +57,11 @@ export function Projects() {
 
   return (
     <div>
-      <div css={css`padding-bottom: 20px`}>
+      <div
+        css={css`
+          padding-bottom: 20px;
+        `}
+      >
         <a css={contactLinks} href='https://github.com/dkramer'>
           <GitHubIcon /> Check out my Github or look at my other hobbies below!
         </a>
@@ -65,9 +69,16 @@ export function Projects() {
       <div css={pictureSelectContainer}>
         {pictureLinks.map((link) => (
           <Link
-              key={link.href}
-              css={pictureType === link.href ? css`${pictureSelectLink}; color: ${ link.color};` : css`${pictureSelectLink}; :hover { color: ${link.color}`}
-              to={`/projects/${link.href}`}
+            key={link.href}
+            css={
+              pictureType === link.href
+                ? css`
+                    ${pictureSelectLink};
+                    color: ${link.color};
+                  `
+                : css`${pictureSelectLink}; :hover { color: ${link.color}`
+            }
+            to={`/projects/${link.href}`}
           >
             {link.name}
           </Link>

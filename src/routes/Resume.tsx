@@ -86,8 +86,8 @@ export function Resume() {
         </div>
         <div css={{ textAlign: 'left' }}>
           <div>
-            <a css={contact} href='mailto=Info@dkramer.dev'>
-              <EmailIcon /> Info@dkramer.dev
+            <a css={contact} href='mailto=dakota@dkramer.dev'>
+              <EmailIcon /> dakota@dkramer.dev
             </a>
           </div>
           <div>
@@ -246,7 +246,8 @@ export function Resume() {
 
       <div
         css={css`
-          ${section}
+          ${section};
+          border: none;
         `}
       >
         <div>
