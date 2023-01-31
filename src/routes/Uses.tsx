@@ -72,8 +72,8 @@ export function Uses() {
             <li>
               <h3>HyperX Pulsefire Haste</h3>
               <div>
-                This is a very light mouse which makes it ergonomic. It's also wired which I prefer as batteries tend
-                to die at the worst possible moment.
+                This is a very light mouse which makes it ergonomic. It's also wired which I prefer as batteries tend to die at the worst
+                possible moment.
               </div>
             </li>
           </ul>
