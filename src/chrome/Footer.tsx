@@ -47,7 +47,7 @@ export function Footer() {
   return (
     <div css={footer}>
       <div css={menu}>
-        {menuItems.map((item, index) => (
+        {menuItems.map((item) => (
           <Link css={css`${menuItem}; :hover { color: ${item.color}`} key={item.name} to={item.href}>
             {item.name}
           </Link>

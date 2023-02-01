@@ -3,7 +3,7 @@ import { css } from '@emotion/react'
 export const menuItems = [
   {
     name: 'About',
-    color: '#9aed6f',
+    color: '#A0EC5B',
     href: 'about'
   },
   {
@@ -18,7 +18,7 @@ export const menuItems = [
   },
   {
     name: 'Uses',
-    color: '#c879ed',
+    color: '#FFD147',
     href: 'uses'
   }
 ]
