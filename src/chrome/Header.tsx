@@ -66,7 +66,7 @@ export function Header() {
   const $root = useRef<HTMLDivElement>(null)
   const $indicator1 = useRef<HTMLDivElement>(null)
   const $indicator2 = useRef<HTMLDivElement>(null)
-  const $items = useRef(menuItems.map((item) => createRef<HTMLAnchorElement>()))
+  const $items = useRef(menuItems.map(() => createRef<HTMLAnchorElement>()))
   const location = useLocation()
   const [active, setActive] = useState(() => {
     const itemIndex = menuItems.findIndex((item) => item.href === location.pathname.split('/')[1])
