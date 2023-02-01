@@ -102,7 +102,21 @@ const educationDetail = css`
   margin-left: 20px;
   
   @media (max-width: ${screenSize.S}) {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
+`
+
+const educationTitle = css`
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  font-weight: bold;
+  
+  @media (max-width: ${screenSize.S}) {
     margin-left: 0;
+    padding-top: 0;
   }
 `
 export function Resume() {
@@ -289,9 +303,9 @@ export function Resume() {
           <h2>Education</h2>
         </div>
         <div css={educationDetail}>
-          <div css={jobTitle}>
-            <div>Madison Area Technical College</div>
-            <div>Madison, Wisconsin</div>
+          <div css={educationTitle}>
+            <div css={{paddingRight: '2em'}}>Madison Area Technical College</div>
+            <div css={{fontWeight: 'normal'}}>Madison, Wisconsin</div>
           </div>
           <ul>
             <li>Associate of Applied Science Degree, Web Analyst/Programmer</li>
