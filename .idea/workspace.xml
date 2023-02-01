@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="999ef031-c55e-42aa-b9e7-27d096f923eb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chrome/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/chrome/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/emblacarousel/EmblaCarousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/emblacarousel/EmblaCarousel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Resume.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Resume.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +64,7 @@
       <workItem from="1673543935162" duration="17762000" />
       <workItem from="1673975973158" duration="24540000" />
       <workItem from="1674143293193" duration="7754000" />
-      <workItem from="1675023756534" duration="24166000" />
+      <workItem from="1675023756534" duration="24642000" />
     </task>
     <servers />
   </component>
