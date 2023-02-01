@@ -34,6 +34,9 @@ const content = css`
     
   @media (max-width: ${screenSize.S}) {
       width: 90%;
+
+    @media (max-width: ${screenSize.XS}) {
+      width: 95%;
 `
 
 const contentBody = css`
@@ -41,6 +44,11 @@ const contentBody = css`
 
   @media (max-width: ${screenSize.S}) {
     padding: 10px 30px;
+  }
+
+  @media (max-width: ${screenSize.XS}) {
+    padding: 10px 10px;
+  }
 `
 
 function App() {

@@ -44,7 +44,8 @@ const link = css`
   margin: 4px 8px;
 
   @media (max-width: ${screenSize.XS}) {
-    font-size: 12px;
+    padding: 14px 48px;
+    margin: 0;
   }
 `
 
