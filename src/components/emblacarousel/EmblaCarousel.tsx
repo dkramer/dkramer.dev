@@ -29,6 +29,10 @@ const emblaStyle = css`
     flex: 0 0 100%;
     min-width: 0;
   }
+
+  @media (max-width: ${screenSize.XS}) {
+    padding: 12px 0;
+  }
 `
 
 export const emblaButton = css`

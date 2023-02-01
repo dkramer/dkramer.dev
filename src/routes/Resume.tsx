@@ -37,10 +37,6 @@ const section = css`
     flex-direction: column;
   }
 
-  h2 {
-    font-style: italic;
-  }
-
   li {
     text-align: left;
   }
@@ -61,15 +57,44 @@ const skills = css`
 `
 
 const jobTitle = css`
-  display: flex;
-  justify-content: space-between;
-  font-weight: bold;
-  padding-top: 20px;
+  text-align: left;
+  
+  div:first-of-type {
+    font-weight: bold;
+    
+  }
+
+  @media (max-width: ${screenSize.S}) {
+    text-align: center;
+  }
 `
+
 const jobRole = css`
+  text-align: right;
+  
+  div:first-of-type {
+    font-weight: bold;
+
+    @media (max-width: ${screenSize.S}) {
+      padding-top: 10px;
+    }
+  }
+
+  @media (max-width: ${screenSize.S}) {
+    text-align: center;
+  }
+`
+
+const jobHeading = css`
   display: flex;
   justify-content: space-between;
-  font-style: italic;
+  padding-top: 20px;
+
+  @media (max-width: ${screenSize.S}) {
+    flex-direction: column;
+    justify-content: center;
+  }
+  
 `
 
 const educationDetail = css`
@@ -156,13 +181,15 @@ export function Resume() {
 
       <div css={section}>
         <div>
-          <div css={jobTitle}>
-            <div>Widen / Acquia</div>
-            <div>Remote / Madison, Wisconsin</div>
-          </div>
-          <div css={jobRole}>
-            <div>Senior Software Engineer</div>
-            <div>January 2019 to Present</div>
+          <div css={jobHeading}>
+            <div css={jobTitle}>
+              <div>Widen / Acquia</div>
+              <div>Senior Software Engineer</div>
+            </div>
+            <div css={jobRole}>
+              <div>Remote / Madison, Wisconsin</div>
+              <div>January 2019 to Present</div>
+            </div>
           </div>
           <div>
             <ul>
@@ -190,13 +217,15 @@ export function Resume() {
 
       <div css={section}>
         <div>
-          <div css={jobTitle}>
-            <div>Great Lakes Higher Education / Nelnet</div>
-            <div>Madison, Wisconsin</div>
-          </div>
-          <div css={jobRole}>
-            <div>Senior Software Engineer</div>
-            <div>April 2015 to January 2019</div>
+          <div css={jobHeading}>
+            <div css={jobTitle}>
+              <div>Great Lakes Higher Education / Nelnet</div>
+              <div>Senior Software Engineer</div>
+            </div>
+            <div css={jobRole}>
+              <div>Madison, Wisconsin</div>
+              <div>April 2015 to January 201</div>
+            </div>
           </div>
           <div>
             <ul>
@@ -218,14 +247,16 @@ export function Resume() {
 
       <div css={section}>
         <div>
-          <div css={jobTitle}>
-            <div>Hewlett Packard</div>
-            <div>Madison, Wisconsin</div>
-          </div>
-          <div css={jobRole}>
-            <div>Developer II</div>
-            <div>February 2012 to March 2015</div>
-          </div>
+            <div css={jobHeading}>
+              <div css={jobTitle}>
+                <div>Hewlett Packard</div>
+                <div>Developer II</div>
+              </div>
+              <div css={jobRole}>
+                <div>Madison, Wisconsin</div>
+                <div>February 2012 to March 2015</div>
+              </div>
+            </div>
           <div>
             <ul>
               <li>Maintained and enhanced a vaccine registry system</li>
