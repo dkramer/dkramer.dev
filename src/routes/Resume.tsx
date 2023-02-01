@@ -100,6 +100,10 @@ const jobHeading = css`
 const educationDetail = css`
   width: 100%;
   margin-left: 20px;
+  
+  @media (max-width: ${screenSize.S}) {
+    margin-left: 0;
+  }
 `
 export function Resume() {
   return (
