@@ -58,10 +58,9 @@ const skills = css`
 
 const jobTitle = css`
   text-align: left;
-  
+
   div:first-of-type {
     font-weight: bold;
-    
   }
 
   @media (max-width: ${screenSize.S}) {
@@ -71,7 +70,7 @@ const jobTitle = css`
 
 const jobRole = css`
   text-align: right;
-  
+
   div:first-of-type {
     font-weight: bold;
 
@@ -94,13 +93,12 @@ const jobHeading = css`
     flex-direction: column;
     justify-content: center;
   }
-  
 `
 
 const educationDetail = css`
   width: 100%;
   margin-left: 20px;
-  
+
   @media (max-width: ${screenSize.S}) {
     flex-direction: column;
     justify-content: center;
@@ -113,7 +111,7 @@ const educationTitle = css`
   justify-content: space-between;
   padding-top: 20px;
   font-weight: bold;
-  
+
   @media (max-width: ${screenSize.S}) {
     margin-left: 0;
     padding-top: 0;
@@ -265,16 +263,16 @@ export function Resume() {
 
       <div css={section}>
         <div>
-            <div css={jobHeading}>
-              <div css={jobTitle}>
-                <div>Hewlett Packard</div>
-                <div>Developer II</div>
-              </div>
-              <div css={jobRole}>
-                <div>Madison, Wisconsin</div>
-                <div>February 2012 to March 2015</div>
-              </div>
+          <div css={jobHeading}>
+            <div css={jobTitle}>
+              <div>Hewlett Packard</div>
+              <div>Developer II</div>
             </div>
+            <div css={jobRole}>
+              <div>Madison, Wisconsin</div>
+              <div>February 2012 to March 2015</div>
+            </div>
+          </div>
           <div>
             <ul>
               <li>Maintained and enhanced a vaccine registry system</li>
@@ -304,8 +302,8 @@ export function Resume() {
         </div>
         <div css={educationDetail}>
           <div css={educationTitle}>
-            <div css={{paddingRight: '2em'}}>Madison Area Technical College</div>
-            <div css={{fontWeight: 'normal'}}>Madison, Wisconsin</div>
+            <div css={{ paddingRight: '2em' }}>Madison Area Technical College</div>
+            <div css={{ fontWeight: 'normal' }}>Madison, Wisconsin</div>
           </div>
           <ul>
             <li>Associate of Applied Science Degree, Web Analyst/Programmer</li>
