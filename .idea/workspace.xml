@@ -5,13 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="999ef031-c55e-42aa-b9e7-27d096f923eb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/DonkeyKongWrap.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useDonkeyKongWrap.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useInputEvent.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useKonamiCode.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chrome/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/chrome/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chrome/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/chrome/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chrome/util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/chrome/util.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/emblacarousel/EmblaCarousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/emblacarousel/EmblaCarousel.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/Resume.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Resume.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,7 +47,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/repos/dkramer.dev/src/routes&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/repos/dkramer.dev/src/components&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -41,11 +59,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\repos\dkramer.dev\src\components" />
+      <recent name="C:\repos\dkramer.dev\src\hooks" />
       <recent name="C:\repos\dkramer.dev\src\routes" />
       <recent name="C:\repos\dkramer.dev\public\projects" />
       <recent name="C:\repos\dkramer.dev\src\components\emblacarousel" />
-      <recent name="C:\repos\dkramer.dev\public" />
-      <recent name="C:\repos\dkramer.dev\src\chrome" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\repos\dkramer.dev\public" />
@@ -65,6 +83,7 @@
       <workItem from="1673975973158" duration="24540000" />
       <workItem from="1674143293193" duration="7754000" />
       <workItem from="1675023756534" duration="25824000" />
+      <workItem from="1675452281038" duration="9478000" />
     </task>
     <servers />
   </component>
