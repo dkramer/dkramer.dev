@@ -25,7 +25,7 @@ const onLeaveBox = css`
   justify-content: space-between;
   z-index: 1;
   max-width: 800px;
-  margin: 0px auto;
+  margin: 0 auto;
 
   @media (max-width: ${screenSize.XS}) {
     flex-direction: column;
@@ -69,16 +69,21 @@ export function Header() {
   const $items = useRef(menuItems.map(() => createRef<HTMLAnchorElement>()))
   const location = useLocation()
   const [active, setActive] = useState(() => {
-    const itemIndex = menuItems.findIndex((item) => item.href === location.pathname.split('/')[1])
-    return itemIndex === -1 ? 0 : itemIndex
+    const pathSplit = location.pathname.split('/')
+    console.log('pathSplit', pathSplit)
+    if (pathSplit.length && pathSplit[1]) {
+      return menuItems.findIndex((item) => item.href === pathSplit[1])
+    } else {
+      return 0
+    }
   })
   const [activeHover, setActiveHover] = useState(active)
 
   const animate = useCallback(() => {
-    if ($root.current) {
+    if ($root.current && activeHover > -1) {
       const menuOffset = $root.current.getBoundingClientRect()
       const activeItem = $items.current[activeHover].current
-      if (activeItem) {
+      if (activeItem && $indicator1.current) {
         const { width, height, top, left } = activeItem.getBoundingClientRect()
         const settings = {
           x: left - menuOffset.x,
@@ -90,11 +95,11 @@ export function Header() {
           duration: 0.8
         }
 
-        gsap.to($indicator1.current!, {
+        gsap.to($indicator1.current, {
           ...settings
         })
 
-        gsap.to($indicator2.current!, {
+        gsap.to($indicator2.current, {
           ...settings,
           duration: 1
         })

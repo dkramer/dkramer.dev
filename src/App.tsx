@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import React, { lazy, Suspense } from 'react'
+import React from 'react'
 import './App.css'
 import { Header } from './chrome/Header'
 import { Footer } from './chrome/Footer'
@@ -11,8 +11,7 @@ import { Uses } from './routes/Uses'
 import { Resume } from './routes/Resume'
 import { screenSize } from './chrome/util'
 import { RemoveTrailingSlash } from './components/RemoveTrailingSlash'
-
-const DonkeyKongWrap = lazy(() => import('./components/DonkeyKongWrap'))
+import {FourOhFour} from "./routes/FourOhFour";
 
 const background = css`
   min-height: 100vh;
@@ -67,13 +66,11 @@ function App() {
             <Route path='projects/:paintingType' element={<Projects />} />
             <Route path='projects/*' element={<Projects />} />
             <Route path='uses' element={<Uses />} />
+            <Route path='/*' element={<FourOhFour />} />
           </Routes>
         </div>
         <Footer />
       </div>
-      <Suspense>
-        <DonkeyKongWrap />
-      </Suspense>
     </div>
   )
 }

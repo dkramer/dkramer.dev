@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import React from 'react'
+import React, {lazy, Suspense} from 'react'
 import { css } from '@emotion/react'
 import { Link } from 'react-router-dom'
 import GitHubIcon from '@mui/icons-material/GitHub'
@@ -7,6 +7,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import EmailIcon from '@mui/icons-material/Email'
 import FileDownloadIcon from '@mui/icons-material/FileDownload'
 import { contactLinks, screenSize } from '../chrome/util'
+
+const DonkeyKongWrap = lazy(() => import('../components/DonkeyKongWrap'))
 
 const main = css`
   display: flex;
@@ -58,7 +60,7 @@ export function About() {
         </div>
       </div>
       <div>
-        <img css={image} src='/meSmall.jpg' />
+        <img css={image} src='/meSmall.jpg' alt="Picture of dkramer" />
         <div>
           <ul css={list}>
             <li>
@@ -84,6 +86,9 @@ export function About() {
           </ul>
         </div>
       </div>
+      <Suspense>
+        <DonkeyKongWrap />
+      </Suspense>
     </div>
   )
 }
