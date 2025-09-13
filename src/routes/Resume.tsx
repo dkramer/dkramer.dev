@@ -41,6 +41,9 @@ const section = css`
     text-align: left;
   }
 `
+const jobContent = css`
+  width: 100%
+`
 
 const skills = css`
   ${section};
@@ -207,7 +210,7 @@ export function Resume() {
         </div>
 
         <div css={section}>
-          <div>
+          <div css={jobContent}>
             <div css={jobHeading}>
               <div css={jobTitle}>
                 <div>Zeroeyes</div>
@@ -232,7 +235,7 @@ export function Resume() {
         </div>
 
         <div css={section}>
-          <div>
+          <div css={jobContent}>
             <div css={jobHeading}>
               <div css={jobTitle}>
                 <div>TechTarget</div>
@@ -256,7 +259,7 @@ export function Resume() {
         </div>
 
         <div css={section}>
-          <div>
+          <div css={jobContent}>
             <div css={jobHeading}>
               <div css={jobTitle}>
                 <div>Widen / Acquia</div>
@@ -299,7 +302,7 @@ export function Resume() {
         </div>
 
         <div css={section}>
-          <div>
+          <div css={jobContent}>
             <div css={jobHeading}>
               <div css={jobTitle}>
                 <div>Great Lakes Higher Education / Nelnet</div>
@@ -333,7 +336,7 @@ export function Resume() {
         </div>
 
         <div css={section}>
-          <div>
+          <div css={jobContent}>
             <div css={jobHeading}>
               <div css={jobTitle}>
                 <div>Hewlett Packard</div>
