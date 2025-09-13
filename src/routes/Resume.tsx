@@ -146,6 +146,10 @@ export function Resume() {
           <div>
             <ul>
               <li>Full Stack</li>
+              <li>Java</li>
+              <li>c#</li>
+              <li>ASP.NET</li>
+              <li>python</li>
               <li>Spring</li>
               <li>Spring Boot</li>
               <li>Maven</li>
@@ -206,24 +210,46 @@ export function Resume() {
           <div>
             <div css={jobHeading}>
               <div css={jobTitle}>
+                <div>Zeroeyes</div>
+                <div>Senior Software Engineer</div>
+              </div>
+              <div css={jobRole}>
+                <div>Remote</div>
+                <div>April 2024 to Present</div>
+              </div>
+            </div>
+            <div>
+              <ul>
+                <li>Expanded business partnerships by 30% through integrations with six major external systems.</li>
+                <li>Cut security vulnerabilities by 50% via proactive remediation and modernized practices.</li>
+                <li>Improved uptime and scalability by decomposing a monolithic system into microservices.</li>
+                <li>Boosted test coverage by 400% through adoption of modern test-driven architecture.</li>
+                <li>Implemented Scrum best practices to reduce ticket lifecycle time and improve requirement clarity.</li>
+                <li>Mentored junior developers and taught modern application architecture reducing the number of bugs in releases by half.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div css={section}>
+          <div>
+            <div css={jobHeading}>
+              <div css={jobTitle}>
                 <div>TechTarget</div>
                 <div>Senior Software Engineer</div>
               </div>
               <div css={jobRole}>
                 <div>Remote</div>
-                <div>November 2023 to Present</div>
+                <div>November 2023 to April 2024</div>
               </div>
             </div>
             <div>
               <ul>
-                <li> Increased main product’s uptime and test coverage by breaking down the monolith into microservices</li>
-                <li>
-                  Implemented data extraction from Salesforce through Workato which increased opportunity data by 30%
-                </li>
-                <li>
-                  Reduced development overhead by 50% and minimize merge conflicts by decoupling microservices
-                  with refactored OpenApi specs
-                </li>
+                <li>Built feature flag library enabling A/B testing and reversible schedulable releases.</li>
+                <li>Migrated core systems into microservices for improved scalability and uptime.</li>
+                <li>Increased opportunity data by 30% with Salesforce and Workato integrations.</li>
+                <li>Reduced development overhead by 50% via refactored OpenAPI specs and decoupled services.</li>
+                <li>Resolved key security vulnerabilities identified through SonarQube.</li>
               </ul>
             </div>
           </div>
