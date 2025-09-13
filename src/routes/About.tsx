@@ -79,7 +79,7 @@ export function About() {
               </a>
             </li>
             <li>
-              <Link css={contactLinks} to='/Dakota_Kramer_2023_resume.pdf' target='_blank' download>
+              <Link css={contactLinks} to='/Dakota_Kramer_Resume_2025.pdf' target='_blank' download>
                 <FileDownloadIcon /> Download Resume
               </Link>
             </li>

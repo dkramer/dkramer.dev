@@ -132,7 +132,7 @@ export function Resume() {
               </a>
             </div>
             <div>
-              <Link css={contact} to='/Dakota_Kramer_2023_resume.pdf' target='_blank' download>
+              <Link css={contact} to='/Dakota_Kramer_Resume_2025.pdf' target='_blank' download>
                 <FileDownloadIcon/> Download Resume
               </Link>
             </div>
