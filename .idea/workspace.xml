@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="999ef031-c55e-42aa-b9e7-27d096f923eb" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/blogs/TestingInProd.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blogs/Trident.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/Blog.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chrome/util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/chrome/util.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/emblacarousel/EmblaCarousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/emblacarousel/EmblaCarousel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useDonkeyKongWrap.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useDonkeyKongWrap.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Projects.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/About.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +94,7 @@
       <workItem from="1735582424837" duration="607000" />
       <workItem from="1757775557855" duration="1356000" />
       <workItem from="1760714928958" duration="923000" />
-      <workItem from="1760716669400" duration="13738000" />
+      <workItem from="1760716669400" duration="14396000" />
     </task>
     <task id="LOCAL-00001" summary="404">
       <option name="closed" value="true" />
@@ -138,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757776295349</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="start">
+      <option name="closed" value="true" />
+      <created>1760890750714</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1760890750714</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +158,8 @@
     <MESSAGE value="add zeroeyes" />
     <MESSAGE value="updat eresume" />
     <MESSAGE value="t" />
-    <option name="LAST_COMMIT_MESSAGE" value="t" />
+    <MESSAGE value="start" />
+    <option name="LAST_COMMIT_MESSAGE" value="start" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
