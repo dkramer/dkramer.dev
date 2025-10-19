@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="999ef031-c55e-42aa-b9e7-27d096f923eb" name="Changes" comment="t">
+    <list default="true" id="999ef031-c55e-42aa-b9e7-27d096f923eb" name="Changes" comment="start">
+      <change afterPath="$PROJECT_DIR$/src/blogs/TestingInProd.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blogs/Trident.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/Blog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Resume.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Resume.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chrome/util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/chrome/util.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/emblacarousel/EmblaCarousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/emblacarousel/EmblaCarousel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useDonkeyKongWrap.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useDonkeyKongWrap.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Projects.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +31,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GoLibraries">
@@ -44,11 +59,11 @@
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "add-blog",
     "go.import.settings.migrated": "true",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/git_repos/dkramer.dev/public",
+    "last_opened_file_path": "C:/git_repos/dkramer.dev/src/blogs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,11 +75,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\git_repos\dkramer.dev\src\blogs" />
       <recent name="C:\git_repos\dkramer.dev\public" />
       <recent name="C:\git_repos\dkramer.dev\src\routes" />
       <recent name="C:\repos\dkramer.dev\src\components" />
       <recent name="C:\repos\dkramer.dev\src\hooks" />
-      <recent name="C:\repos\dkramer.dev\src\routes" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\repos\dkramer.dev\public" />
@@ -88,6 +103,8 @@
       <workItem from="1735571510765" duration="3058000" />
       <workItem from="1735582424837" duration="607000" />
       <workItem from="1757775557855" duration="1356000" />
+      <workItem from="1760714928958" duration="923000" />
+      <workItem from="1760716669400" duration="13738000" />
     </task>
     <task id="LOCAL-00001" summary="404">
       <option name="closed" value="true" />
@@ -148,5 +165,21 @@
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/about/index.tsx</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/chrome/Footer.tsx</url>
+          <line>1</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

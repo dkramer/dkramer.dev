@@ -30,7 +30,7 @@ export const useDonkeyKongWrap = () => {
 
   const { ref } = useSwipeable({
     onSwiped: handleSwiped,
-    onTouchStartOrOnMouseDown: ({ event }) => {
+    onTouchStartOrOnMouseDown: ({ event: _ }) => {
       /*nothing */
     },
     touchEventOptions: { passive: false },
