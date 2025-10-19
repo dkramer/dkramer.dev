@@ -8,6 +8,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import {css} from "@emotion/react";
 import {TestingInProd} from "../blogs/TestingInProd";
 import {LongLivedBranches} from "../blogs/LongLivedBranches";
+import {UbiquitousLanguage} from "../blogs/UbiquitousLanguage";
 
 const header = css`
     text-align: left;
@@ -80,6 +81,12 @@ const blogItems = new Map<string, {
     href: string
     component: React.ComponentType
 }>();
+blogItems.set("ubiquitousLanguage", {
+    name: 'Why Ubiquitous Language Matters in Software Engineering',
+    description: 'Ubiquitous language ensures that developers, domain experts, and users all speak the same precise terms, eliminating ambiguity and keeping code aligned with real business concepts. By embedding this shared language into software design, teams reduce misunderstandings, improve maintainability, and build systems that truly reflect the domain they serve.',
+    href: 'ubiquitousLanguage',
+    component: UbiquitousLanguage
+});
 blogItems.set("featureFlags", {
     name: 'Feature Flags: The Secret Weapon for Faster, Safer Deployments',
     description: 'Feature flags let teams separate deployment from release, enabling code to be safely pushed to production at any time while controlling visibility with a simple toggle. When combined with automated testing and CI/CD, feature flags empower teams to move faster, reduce risk, and release with confidence.',
