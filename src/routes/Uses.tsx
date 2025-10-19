@@ -58,7 +58,7 @@ export function Uses() {
             <li>
               <h3>Desktop i7 32GB RAM</h3>
               <div>
-                Built last summer. Watercooled and <i>mostly</i> silent.
+                Built a couple summers ago. Watercooled and <i>mostly</i> silent.
               </div>
             </li>
             <li>
@@ -67,7 +67,7 @@ export function Uses() {
             </li>
             <li>
               <h3>Standing Desk</h3>
-              <div>A current project of mine is building a river "table" sit standing desk. They say sitting is the new smoking.</div>
+              <div>A project of mine was building the desk I use. It is a river "table" sit stand desk. They say sitting is the new smoking.</div>
             </li>
             <li>
               <h3>HyperX Pulsefire Haste</h3>
@@ -109,7 +109,7 @@ export function Uses() {
         <div>
           <ul>
             <li>
-              <h3>Canon R6</h3>
+              <h3>Canon R5</h3>
               <div>Full frame mirrorless camera.</div>
             </li>
             <li>
