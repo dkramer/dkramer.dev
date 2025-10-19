@@ -6,6 +6,7 @@ import { Footer } from './chrome/Footer'
 import { css } from '@emotion/react'
 import { Route, Routes } from 'react-router-dom'
 import { About } from './routes/About'
+import { Blog } from './routes/Blog'
 import { Projects } from './routes/Projects'
 import { Uses } from './routes/Uses'
 import { Resume } from './routes/Resume'
@@ -66,6 +67,8 @@ function App() {
             <Route path='projects/:paintingType' element={<Projects />} />
             <Route path='projects/*' element={<Projects />} />
             <Route path='uses' element={<Uses />} />
+            <Route path='blog/:blogItem' element={<Blog />} />
+            <Route path='blog/*' element={<Blog />} />
             <Route path='/*' element={<FourOhFour />} />
           </Routes>
         </div>

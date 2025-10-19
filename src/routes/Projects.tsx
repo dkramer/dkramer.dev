@@ -1,7 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import React, { useEffect, useState } from 'react'
 import { EmblaCarousel } from '../components/emblacarousel/EmblaCarousel'
-import { EmblaOptionsType } from 'embla-carousel-react'
 import { picture, pictureLinks, pictures, PictureTypes } from './projectPictureUtil'
 import { Link, useNavigate } from 'react-router-dom'
 import { css } from '@emotion/react'
@@ -53,8 +52,6 @@ export function Projects() {
     }
   }, [location.pathname])
 
-  const OPTIONS: EmblaOptionsType = {}
-
   return (
     <div>
       <div
@@ -84,7 +81,7 @@ export function Projects() {
           </Link>
         ))}
       </div>
-      <div>{images ? <EmblaCarousel slides={images} options={OPTIONS} /> : <div>loading</div>}</div>
+      <div>{images ? <EmblaCarousel slides={images} /> : <div>loading</div>}</div>
     </div>
   )
 }

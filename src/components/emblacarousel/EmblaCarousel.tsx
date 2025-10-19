@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import React, { useState, useEffect, useCallback } from 'react'
-import useEmblaCarousel, { EmblaOptionsType } from 'embla-carousel-react'
+import useEmblaCarousel from 'embla-carousel-react'
 import { PrevButton } from './PrevButton'
 import { NextButton } from './NextButton'
 import { DotButton } from './DotButton'
@@ -37,7 +37,6 @@ const emblaStyle = css`
 
 export const emblaButton = css`
   z-index: 1;
-  color: var(--background-site);
   position: absolute;
   display: flex;
   align-items: center;
@@ -87,11 +86,10 @@ const dots = css`
 
 type PropType = {
   slides: string[]
-  options?: EmblaOptionsType
 }
 export function EmblaCarousel(props: PropType) {
-  const { slides, options } = props
-  const [emblaRef, emblaApi] = useEmblaCarousel(options)
+  const { slides } = props
+  const [emblaRef, emblaApi] = useEmblaCarousel()
   const [prevBtnEnabled, setPrevBtnEnabled] = useState(false)
   const [nextBtnEnabled, setNextBtnEnabled] = useState(false)
   const [selectedIndex, setSelectedIndex] = useState(0)

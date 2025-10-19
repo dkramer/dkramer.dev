@@ -20,8 +20,15 @@ export const menuItems = [
     name: 'Uses',
     color: '#FFD147',
     href: 'uses'
+  },
+  {
+    name: 'Blog',
+    color: '#f58742',
+    href: 'blog'
   }
 ]
+
+
 
 export const contactLinks = css`
   color: #404040;
