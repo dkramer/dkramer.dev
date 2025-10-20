@@ -49,7 +49,7 @@ export function About() {
         <h1>Hi, I’m Dakota 👋</h1>
         <div>
           <p>
-            I’m a full stack senior software engineer working at Widen (an Acquia company). My passion is in creating. I explore that
+            I’m a full stack senior software engineer working at ZeroEyes. My passion is in creating. I explore that
             passion through different avenues including painting, woodworking, baking, and of course creating software.
           </p>
           <p>
