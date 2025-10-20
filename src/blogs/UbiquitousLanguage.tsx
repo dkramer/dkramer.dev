@@ -23,17 +23,27 @@ const section = css`
 
 export function UbiquitousLanguage() {
     return (
-        <div css={main}> <div css={section}> <h1>Why Ubiquitous Language Matters in Software Engineering</h1> <p>
-            Language is the bridge between humans and software. When it’s clear and shared, teams move fast and build the right things. When it’s ambiguous, confusion spreads — and code silently diverges from reality. </p> <p>
-            That’s why <b>ubiquitous language</b> is one of the most important (and underrated) tools in software engineering. It’s the practice of using the same precise terms — across code, conversations, and documentation — to describe the business domain. Everyone, from developers to domain experts to end users, speaks the same language. </p> </div>
+        <div css={main}>
+            <div css={section}><h1>Why Ubiquitous Language Matters in Software Engineering</h1> <p>
+                Language is the bridge between humans and software. When it’s clear and shared, teams move fast and
+                build the right things. When it’s ambiguous, confusion spreads — and code silently diverges from
+                reality. </p> <p>
+                That’s why <b>ubiquitous language</b> is one of the most important (and underrated) tools in software
+                engineering. It’s the practice of using the same precise terms — across code, conversations, and
+                documentation — to describe the business domain. Everyone, from developers to domain experts to end
+                users, speaks the same language. </p></div>
 
             <div css={section}>
                 <h2>The Problem With Ambiguity</h2>
                 <p>
-                    Software doesn’t handle ambiguity. Computers require exact instructions — no nuance, no gray areas. But humans love fuzzy words like “customer,” “account,” or “order.” Each might mean something slightly different to different people.
+                    Software doesn’t handle ambiguity. Computers require exact instructions — no nuance, no gray areas.
+                    But humans love fuzzy words like “customer,” “account,” or “order.” Each might mean something
+                    slightly different to different people.
                 </p>
                 <p>
-                    If a developer assumes “customer” means a paying account, while the business means “any registered user,” the result is misaligned code and misunderstood features. Bugs creep in not because of logic errors, but because of <b>language drift</b>.
+                    If a developer assumes “customer” means a paying account, while the business means “any registered
+                    user,” the result is misaligned code and misunderstood features. Bugs creep in not because of logic
+                    errors, but because of <b>language drift</b>.
                 </p>
                 <p>
                     Ambiguous terminology becomes technical debt — subtle, pervasive, and expensive to fix later.
@@ -43,16 +53,18 @@ export function UbiquitousLanguage() {
             <div css={section}>
                 <h2>How Ubiquitous Language Solves It</h2>
                 <p>
-                    Ubiquitous language forces clarity. It demands that everyone agree on what words mean — and that those definitions appear everywhere: in meetings, code, documentation, and tests.
+                    Ubiquitous language forces clarity. It demands that everyone agree on what words mean — and that
+                    those definitions appear everywhere: in meetings, code, documentation, and tests.
                 </p>
                 <p>
-                    When the same words describe the same concepts across all layers of the system, misunderstandings vanish.
+                    When the same words describe the same concepts across all layers of the system, misunderstandings
+                    vanish.
                 </p>
                 <p>For example:</p>
-                    <pre>
+                <pre>
                         <code>
                             {
-                            `// Bad: inconsistent naming
+                                `// Bad: inconsistent naming
 const createUserAccount = () => {...}
 const getCustomerProfile = () => {...}
 
@@ -63,14 +75,19 @@ const getCustomer = () => {...}`
                         </code>
                     </pre>
                 <p>
-                The second example aligns with how domain experts describe the concept — “customer” — instead of mixing “user” and “account.” The code becomes self-documenting because it mirrors the shared vocabulary. </p> </div>
+                    The second example aligns with how domain experts describe the concept — “customer” — instead of
+                    mixing “user” and “account.” The code becomes self-documenting because it mirrors the shared
+                    vocabulary. </p></div>
             <div css={section}>
                 <h2>The Role in Domain-Driven Design</h2>
                 <p>
-                    Ubiquitous language is a <b>core pillar of Domain-Driven Design (DDD)</b>. In DDD, the domain model — the conceptual map of how a business operates — drives the software’s structure. But that only works if the language is consistent between the model and the code.
+                    Ubiquitous language is a <b>core pillar of Domain-Driven Design (DDD)</b>. In DDD, the domain model
+                    — the conceptual map of how a business operates — drives the software’s structure. But that only
+                    works if the language is consistent between the model and the code.
                 </p>
                 <p>
-                    When domain experts say “an order can be placed, shipped, or canceled,” the code should literally read like that:
+                    When domain experts say “an order can be placed, shipped, or canceled,” the code should literally
+                    read like that:
                 </p>
                 <pre>
                     <code>
@@ -88,17 +105,23 @@ const getCustomer = () => {...}`
                     </code>
                 </pre>
                 <p>
-                These might be technically accurate, but they drift from the domain’s meaning. Over time, that drift makes the system harder to reason about. The business evolves in one language, the code in another, and alignment decays. A ubiquitous language keeps the two in sync.
+                    These might be technically accurate, but they drift from the domain’s meaning. Over time, that drift
+                    makes the system harder to reason about. The business evolves in one language, the code in another,
+                    and alignment decays. A ubiquitous language keeps the two in sync.
                 </p>
             </div>
 
             <div css={section}>
                 <h2>Naming Is a Design Act</h2>
                 <p>
-                    Choosing names isn’t a trivial task — it’s design. When you embed ubiquitous language into your codebase, you’re not just naming things; you’re encoding shared understanding. Each identifier becomes a living artifact of collaboration.
+                    Choosing names isn’t a trivial task — it’s design. When you embed ubiquitous language into your
+                    codebase, you’re not just naming things; you’re encoding shared understanding. Each identifier
+                    becomes a living artifact of collaboration.
                 </p>
                 <p>
-                    This alignment makes onboarding faster, discussions clearer, and testing easier. You can even trace business logic directly through the code because the language matches the mental model of the business.
+                    This alignment makes onboarding faster, discussions clearer, and testing easier. You can even trace
+                    business logic directly through the code because the language matches the mental model of the
+                    business.
                 </p>
             </div>
 
@@ -124,10 +147,13 @@ const getCustomer = () => {...}`
                 <p>
                     Here’s how teams can start implementing it:
                     <ul>
-                        <li><b>Collaborate with domain experts:</b> Extract terms directly from business conversations.</li>
+                        <li><b>Collaborate with domain experts:</b> Extract terms directly from business conversations.
+                        </li>
                         <li><b>Create a living glossary:</b> Define key entities and their meanings.</li>
                         <li><b>Refactor code:</b> Update names to reflect the agreed terms.</li>
-                        <li><b>Use it everywhere:</b> Code, APIs, UI text, and documentation should share the same language.</li>
+                        <li><b>Use it everywhere:</b> Code, APIs, UI text, and documentation should share the same
+                            language.
+                        </li>
                         <li><b>Review language regularly:</b> Evolve definitions as the domain evolves.</li>
                     </ul>
                 </p>
@@ -137,12 +163,34 @@ const getCustomer = () => {...}`
             </div>
 
             <div css={section}>
-                <h2>The Bottom Line</h2>
+                <h2>Beyond Code: Ubiquitous Language in Everyday Life</h2>
                 <p>
-                    Software development is a language problem disguised as a technical one. Ubiquitous language transforms communication into a design tool — uniting business and code around the same truth.
+                    The same principles apply
+                outside of software. In personal communication — whether with friends, family, or partners — shared
+                language builds understanding and reduces conflict. When everyone agrees on what a word or phrase means,
+                misunderstandings fade and collaboration improves.
                 </p>
                 <p>
-                    When developers, domain experts, and users speak the same language, the software becomes more than a system. It becomes an expression of understanding — one where every word, variable, and function reinforces the meaning it was built to serve.
+                    Think about how often arguments stem from
+                mismatched definitions. “Soon” might mean five minutes to one person and an hour to another. By
+                clarifying what you mean — and using consistent, agreed-upon terms — you build stronger relationships
+                based on clarity, not assumption.
+                </p>
+                <p>
+                    In both life and software, language defines reality. The clearer it is, the smoother things run.
+                </p>
+            </div>
+
+            <div css={section}>
+                <h2>The Bottom Line</h2>
+                <p>
+                    Software development is a language problem disguised as a technical one. Ubiquitous language
+                    transforms communication into a design tool — uniting business and code around the same truth.
+                </p>
+                <p>
+                    When developers, domain experts, and users speak the same language, the software becomes more than a
+                    system. It becomes an expression of understanding — one where every word, variable, and function
+                    reinforces the meaning it was built to serve.
                 </p>
             </div>
         </div>
